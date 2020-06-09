@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap;subset:latin,cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="index-style.css">
 </head>
 <body>
 <header>
   <section class="top1">
-    <a class="logo">
+    <div class="logo">
+      <a>
       <img src="img/logo-technomart.svg"
            height="22"
            width="137"
            alt="Техномарт лого">
-    </a>
+      </a>
+    </div>
     <form id="search">
       <label for="a"> Поиск:
         <input type="search"
@@ -44,10 +48,11 @@
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </p>
     <img src="img/icon_login.png" width="20" height="17">
-    <button type="button">
+    <a href="login.html">
       Войти
-    </button>
-    <form>
+    </a>
+    <form class="visually-hidden">
+      <button type="button" class="close-button"><img src="img/kretik.png" width="21" height="21"></button>
       Логин <input type="text" name="login" placeholder="Введите логин"><br>
       Пароль <input type="password" name="password" placeholder="Введите пароль"><br>
       <button type="submit">Отправить</button>
@@ -89,27 +94,47 @@
     </ul>
   </section>
   <h3>ЦЕНА:</h3>
+  <form class="price" method="post">
+    <fieldset>
+    <input type="range">
+    </fieldset>
+    <p>0</p> - <p>30000</p>
+  </form>
 
   <h3>ПРОИЗВОДИТЕЛЬ</h3>
-  <form>
-
-    <input type="checkbox" id="BOSCH">
+  <form class="firm" method="post">
+    <fieldset>
+      <ul>
+    <li>
+      <input type="checkbox" id="BOSCH">
     <img src="img/checkbox_off.png" height="23" width="23">
-    <label for="BOSCH">BOSCH</label><br>
+      <label for="BOSCH">BOSCH</label><br>
+    </li>
+        <li>
     <input type="checkbox" id="ИНТЕРСКОЛ">
-    <img src="img/checkbox_off.png" height="23" width="23">
+        <img src="img/checkbox_off.png" height="23" width="23">
     <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label><br>
+        </li>
+        <li>
     <input type="checkbox" id="MAKITA">
     <img src="img/checkbox_off.png" height="23" width="23">
     <label for="MAKITA">MAKITA</label><br>
+        </li>
+        <li>
     <input type="checkbox" id="DEWALT">
     <img src="img/checkbox_off.png" height="23" width="23">
     <label for="DEWALT">DEWALT</label><br>
+        </li>
+        <li>
     <input type="checkbox" id="HITACHI">
     <img src="img/checkbox_off.png" height="23" width="23">
     <label for="HITACHI">HITACHI</label><br>
+        </li>
+      </ul>
+    </fieldset>
 
   <h3>ПИТАНИЕ</h3>
+    <fieldset class="energy">
     <input type="radio" id="АККУМУЛЯТОРНЫЕ" name="r">
     <img src="img/radio_off_360.png" width="25" height="25">
     <label for="АККУМУЛЯТОРНЫЕ">АККУМУЛЯТОРНЫЕ</label><br>
@@ -117,10 +142,12 @@
     <img src="img/radio_off_360.png" width="25" height="25">
     <label for="СЕТЕВЫЕ">СЕТЕВЫЕ</label><br>
     <button type="button">Показать</button>
+    </fieldset>
 
   </form>
   <form class="visually-hidden">
-    <button type="button"><img src="img/kretik.png" width="21" height="21"></button>
+    <button type="button"><img src="img/kretik.png" width="21" height="21">
+    </button>
     <img src="img/form_katalog.png" height="66" width="66"> Товар добавлен в корзину!<br>
     <button type="button">ОФОРМИТЬ ЗАКАЗ</button>
     <button type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>

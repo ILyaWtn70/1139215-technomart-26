@@ -3,35 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap;subset:latin,cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="index-style.css">
 </head>
 <body>
 <header>
   <section class="top1">
-  <a class="logo">
+  <div class="logo">
+  <a>
     <img src="img/logo-technomart.svg"
-         height="22"
-         width="137"
+         height="19"
+         width="109"
          alt="Техномарт лого">
   </a>
-     <form id="search">
-       <label for="a"> Поиск:
+  </div>
+    <div class="search-field">
+    <img src="img/icon_search.png" height="17" width="17" class="img-search">
+    <div class="search">
+      <label for="a" class="search"> Поиск: </label>
+     <form id="search" class="visually-hidden">
        <input type="search"
               name="search"
               placeholder="Поиск"
               id="a"
               >
-       </label>
+
        <button type="submit"
                name="submit-button">
          Найти
        </button>
      </form>
-  <ul>
-    <li><a href=""><img src="img/flag.png" width="14" height="16"><button type="button">Закладки:0</button></a> </li>
-    <li><a href=""><img src="img/bag.png" height="15" width="15"> Корзина:0</a> </li>
-    <li><a href="">Оформить заказ</a> </li>
-  </ul>
+    </div>
+    </div>
+
+    <a href="" class="flag-button">
+      <img src="img/flag.png" width="14" height="16" class="flag-img">
+      <span class="buy-items">Закладки: 0</span>
+    </a>
+
+    <a href="" class="bag-field">
+      <img src="img/bag.png" height="15" width="15" class="bag-img">
+      <span class="bag">Корзина: 0</span>
+    </a>
+    <a href="" class="made-custom">
+      <span class="custom">Оформить заказ</span>
+    </a>
+
   </section>
 
   <section class="top2">
@@ -45,10 +62,11 @@
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   </p>
     <img src="img/icon_login.png" width="20" height="17">
-    <button type="button">
+    <a href="login.html">
     Войти
-    </button>
-    <form>
+    </a>
+    <form class="visually-hidden">
+      <button type="button" class="close-button"><img src="img/kretik.png" width="21" height="21"></button>
       Логин <input type="text" name="login" placeholder="Введите логин"><br>
       Пароль <input type="password" name="password" placeholder="Введите пароль"><br>
       <button type="submit">Отправить</button>
@@ -69,6 +87,14 @@
 </header>
 <main>
   <section>
+    <section class="slides">
+    <figure>
+      <img src="img/lider1.png" height="266" width="620">
+      <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+    </figure>
+      <button type="button"><img src="img/icon_left.png" width="22" height="40"></button>
+      <button type="button"><img src="img/icon_right.png" height="40" width="22"></button>
+    </section>
     <ul>
       <li><h2>Материалы на любой вкус</h2><img src="img/banka.png" height="65" width="44"></li>
       <li><h2>Инструмент на все случаи</h2><img src="img/drel.png" width="75" height="61"></li>
@@ -153,11 +179,13 @@
     заехав в наш офис:
     <button type="button"><img src="img/Map.png" height="158" width="300"></button>
     <figure class="visually-hidden">
+      <button type="button" class="close-button"><img src="img/kretik.png" width="21" height="21"></button>
       <img src="img/pryamougolnik_1_4198.png" width="968" height="474">
     </figure>
     <button type="button">Заблудились?Напишите нам!</button>
   </section>
   <form name="write_us" class="visually-hidden">
+     <button type="button" class="close-button"><img src="img/kretik.png" height="21" width="21"></button>
      Ваше имя:                        Ваш e-mail:<br>
     <input type="text" name="imya" placeholder="Имя Фамилия">
     <input type="text" name="email" placeholder="email@example.com"><br>
