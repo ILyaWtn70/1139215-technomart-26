@@ -8,6 +8,18 @@ body {
   font-family: 'Cuprum', sans-serif;
 }
 
+.content{
+  margin-right: auto;
+  margin-left: auto;
+  width:940px;
+
+}
+
+.top1 {
+  width:100%;
+  background-color: #293449;;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,31 +35,37 @@ a {
   overflow: hidden;
 }
 
-
-
-.top1{
+header{
+  background-color: #f4f7f9;
   width: 1280px;
+  height: 320px;
+
+}
+
+.flex-top1{
+  width: 100%;
   height: 42px;
   background-color: #293449;
   display:flex;
   align-items: center;
+
 }
 
 .logo{
   padding: 11px 1px 0 0;
-  margin-left:170px;
+  margin-left:130px;
   width: 220px;
   height: 31px;
   background-color: #ee3643;
   text-align:center;
   box-shadow: 0 5px 0 0 #b52933;
-
-
 }
 
 .img-search{
   opacity: 0.3;
+  margin-top:2px;
   margin-left: 16px;
+  margin-right:5px;
 
 }
 
@@ -58,7 +76,9 @@ a {
   color: #ffffff;
   margin-bottom: 0px;
   margin-left:7px;
-  padding-right:90px;
+  padding-right:57px;
+  display: flex;
+
 
 }
 
@@ -69,6 +89,19 @@ a {
   padding-right:2px;
 
 }
+
+.search-field input  {
+  background-color: #293449;
+  border:none;
+  color:white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  outline: none;
+
+}
+
 
 
 .flag-button{
@@ -112,6 +145,7 @@ a {
 .bag-img {
   margin-left:10px;
   margin-right:15px;
+  opacity: 0.3;
 
 }
 
@@ -135,7 +169,7 @@ a {
 }
 
 .custom{
-  margin-left:2px;
+  margin-left:4px;
 }
 
 
@@ -148,13 +182,224 @@ a {
   background-color:red;
 }
 
-.search-field:hover{
+.search-field:active{
   background-color:white;
   color:black;
 }
 
+.top2{
+  display:flex;
+}
+
+.description-text {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ee3643;
+  margin-left:184px;
+  margin-top:46px;
+
+}
+
+.contacts {
+  display:flex;
+  flex-direction: column;
+}
+
+.telephone{
+  display:flex;
+  justify-content: center;
+  width: 265px;
+  height: 38px;
+  border: 3.0px solid #ffffff;
+  margin-top:47px;
+  margin-left:80px;
+
+}
+
+.phone-img{
+  margin-top: 10px;
+  padding-right: 30px;
+  margin-left: 4px;
 
 
+}
+
+.number{
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ee3643;
+  margin-top:8px;
+  margin-bottom:25px;
+  padding-right:30px;
+
+}
+
+.adress {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #32425c;
+  margin-left: 90px;
+  margin-top:4px;
+
+}
+
+.user-login{
+  display: flex;
+}
+
+.enter-field{
+  display:flex;
+  width: 121px;
+  height: 45px;
+  background-color: #ffffff;
+  margin-top: 45px;
+  margin-left: 68px;
+}
+
+.img-enter{
+  margin-top: 14px;
+  margin-left: 12px;
+}
+
+.enter {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 14px;
+  margin-top: 12px;
+}
 
 
+.registration{
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  text-align:center;
+  display: flex;
+  margin-left:8px;
+  margin-top: 45px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.reg-text{
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.navigation{
+  width: 940px;
+  height: 60px;
+  background-color: #32425c;
+  margin-left:130px;
+  margin-top: 25px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: baseline;
+  padding-top:1px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.links span{
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.link1 {
+  padding-right: 32px;
+  padding-left: 50px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link1:hover{
+  background-color: #1d2739;
+}
+
+.link2 {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link2:hover{
+  background-color: #1d2739;
+}
+
+.link3 {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link3:hover{
+  background-color: #1d2739;
+}
+
+.link4 {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link4:hover{
+  background-color: #1d2739;
+}
+
+.link5 {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link5:hover{
+  background-color: #1d2739;
+}
+
+.link6 {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link6:hover{
+  background-color: #1d2739;
+}
+
+.link7 {
+  padding-right: 37px;
+  padding-left: 32px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.link7:hover{
+  background-color: #1d2739;
+}
 

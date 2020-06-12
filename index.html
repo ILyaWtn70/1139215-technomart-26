@@ -5,10 +5,12 @@
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap;subset:latin,cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="index-style.css">
+  <link rel="stylesheet" href="Main-css.css">
 </head>
 <body>
 <header>
   <section class="top1">
+    <div class="content flex-top1">
   <div class="logo">
   <a>
     <img src="img/logo-technomart.svg"
@@ -18,20 +20,17 @@
   </a>
   </div>
     <div class="search-field">
+      <label for="a">
     <img src="img/icon_search.png" height="17" width="17" class="img-search">
+      </label>
     <div class="search">
-      <label for="a" class="search"> Поиск: </label>
-     <form id="search" class="visually-hidden">
-       <input type="search"
+     <form id="search">
+       <input type="text"
               name="search"
               placeholder="Поиск"
               id="a"
+              class="search-style";
               >
-
-       <button type="submit"
-               name="submit-button">
-         Найти
-       </button>
      </form>
     </div>
     </div>
@@ -48,62 +47,107 @@
     <a href="" class="made-custom">
       <span class="custom">Оформить заказ</span>
     </a>
-
+    </div>
   </section>
 
   <section class="top2">
-  <p>Интернет-магазин
-    строительных материалов
+  <p class="description-text">Интернет-магазин<br>
+    строительных материалов<br>
     и инструментов для ремонта
   </p>
-  <p>
-    <img src="img/tel.svg" width="19" height="19">
-    +7 (812) 555-05-55 <br>
+  <div class="contacts">
+    <div class="telephone">
+    <img src="img/tel.svg" width="19" height="19" class="phone-img">
+      <p class="number">
+        +7 (812) 555-05-55
+      </p>
+    </div>
+    <p class="adress">
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-  </p>
-    <img src="img/icon_login.png" width="20" height="17">
-    <a href="login.html">
+    </p>
+  </div>
+    <div class="user-login">
+      <div class="enter-field">
+    <img src="img/icon_login.png" width="20" height="17" class="img-enter">
+    <a href="login.html" class="enter">
     Войти
     </a>
-    <form class="visually-hidden">
+      </div>
+    <!--  <form class="visually-hidden">
       <button type="button" class="close-button"><img src="img/kretik.png" width="21" height="21"></button>
       Логин <input type="text" name="login" placeholder="Введите логин"><br>
       Пароль <input type="password" name="password" placeholder="Введите пароль"><br>
       <button type="submit">Отправить</button>
     </form>
-     <a href=""> Регистрация</a>
+    -->
+     <a href="" class="registration">
+       <span class="reg-text">Регистрация</span>
+     </a>
+    </div>
   </section>
   <nav class="navigation">
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="">Компания</a> </li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="">Новости</a></li>
-      <li><a href="">Спецпредложения</a></li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Контакты</a></li>
+    <ul class="links">
+      <li><a href="index.html"><span class="link1">Главная</span></a></li>
+      <li class="link2"><a href=""><span>Компания</span></a> </li>
+      <li class="link3"><a href="catalog.html"><span>Каталог</span></a></li>
+      <li class="link4"><a href=""><span>Новости</span></a></li>
+      <li class="link5"><a href=""><span>Спецпредложения</span></a></li>
+      <li class="link6"><a href=""><span>Доставка</span></a></li>
+      <li class="link7"><a href=""><span>Контакты</span></a></li>
     </ul>
   </nav>
 </header>
 <main>
   <section>
-    <section class="slides">
-    <figure>
-      <img src="img/lider1.png" height="266" width="620">
-      <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
-    </figure>
-      <button type="button"><img src="img/icon_left.png" width="22" height="40"></button>
-      <button type="button"><img src="img/icon_right.png" height="40" width="22"></button>
-    </section>
-    <ul>
-      <li><h2>Материалы на любой вкус</h2><img src="img/banka.png" height="65" width="44"></li>
-      <li><h2>Инструмент на все случаи</h2><img src="img/drel.png" width="75" height="61"></li>
-      <li><h2>Техника для стройки</h2><img src="img/traktor.png" height="62" width="78"></li>
-      <li><h2>Скидки 50% на 350 товаров</h2><img src="img/kidki50.png" width="59" height="72"> </li>
-      <li><h2>Доставка бесплатно</h2><img src="img/tahka.png" height="63" width="78">
-    </ul>
+    <div class="main-links">
+      <div class="materials banka-pic">
+        <div class="under-materials">
+        <h2>Материалы</h2>
+        <a href=""><span>НА ЛЮБОЙ ВКУС</span></a>
+        </div>
+        <img src="img/banka.png" height="65" width="44">
+      </div>
+      <div class="materials drill-pic">
+        <div class="under-materials">
+      <h2>Инструмент</h2>
+          <a href=""><span>НА ВСЕ СЛУЧАИ</span></a>
+        </div>
+          <img src="img/drel.png" width="75" height="61">
+      </div>
+      <div class="materials traktor-pic">
+        <div class="under-materials">
+      <h2>Техника </h2>
+          <a href=""><span>ДЛЯ СТРОЙКИ</span></a>
+        </div>
+          <img src="img/traktor.png" height="62" width="78">
+      </div>
+      <div class="materials sale-pic">
+        <div class="under-materials">
+      <h2>Скидки 50%</h2>
+          <a href=""><span>НА 350 ТОВАРОВ</span></a>
+        </div>
+          <img src="img/kidki50.png" width="59" height="72">
+      </div>
+      <div class="materials truck-pic">
+        <div class="under-materials">
+      <h2>Доставка</h2>
+          <a href=""><span>БЕСПЛАТНО</span></a>
+        </div>
+          <img src="img/tahka.png" height="63" width="78">
+      </div>
+
+      <div class="slides">
+        <figure>
+          <img src="img/lider1.png" height="266" width="620">
+          <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+        </figure>
+        <button type="button"><img src="img/icon_left.png" width="22" height="40"></button>
+        <button type="button"><img src="img/icon_right.png" height="40" width="22"></button>
+      </div>
+    </div>
   </section>
   <section>
+
     <div>
       <h2>Популярные товары:</h2>
       <a href="">Все популярные товары</a>

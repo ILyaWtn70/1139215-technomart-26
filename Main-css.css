@@ -1,0 +1,105 @@
+.materials {
+  display: flex;
+  width: 300px;
+  height: 123px;
+
+}
+
+
+body {
+  margin:0;
+  padding:0;
+
+  background-color: white;
+  color:white;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.central{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-links {
+  display:flex;
+  flex-direction: column;
+}
+
+.materials h2{
+  font-family: Cuprum;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 23px;
+  margin-top:25px;
+}
+
+under-materials {
+  display: flex;
+  flex-direction: column;
+}
+
+.materials a {
+  background-color: black;
+  align-self: flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right:22px;
+  padding-left:12px;
+  opacity: 0.1;
+  margin-left: 23px;
+}
+
+.materials span {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.materials img {
+  margin-left: 50px;
+  margin-top:28px;
+}
+
+.banka-pic {
+    background-color: #ffbf47;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+.drill-pic {
+  background-color: #3bbce3;
+}
+
+.traktor-pic{
+background-color: #dc91d8;
+}
+
+.sale-pic {
+  background-color: #8ed78f;
+}
+
+.truck-pic{
+  background-color: #ffbf47;
+}
