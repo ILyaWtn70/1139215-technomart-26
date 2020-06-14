@@ -103,3 +103,213 @@ background-color: #dc91d8;
 .truck-pic{
   background-color: #ffbf47;
 }
+
+.popular-items h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+  margin-right: 320px;
+  margin-bottom:20px;
+}
+
+.popular-items a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top:13px;
+  padding-right:55px;
+  padding-bottom: 13px;
+  padding-left: 55px;
+  background-color: #ee3643;
+  border-radius: 5px;
+
+}
+
+.popular-items{
+  display: flex;
+  width: 940px;
+  height: 89px;
+  background-color: #f9f5f0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.drill-catalog{                      /* Ряд перфораторов */
+  display: flex;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  justify-content: space-between;
+}
+
+.drill-tool {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 316px;
+  background-color: #ffffff;
+  border: 1.0px solid #eaeaea;
+}
+.drill-tool h3{
+  font-family: PTSans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+
+.price-strike {
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #a9a9a9;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 7px;
+}
+
+.price-strike-none {
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 7px;
+}
+
+.red-price {
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color:#ee3643;
+  text-align: center;
+  align-self: center;
+  padding-top:13px;
+  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-left:40px;
+}
+
+.hidden-buy{                         /* Окно которое появляется при наведении на карточку товара */
+  display: flex;
+  width: 208px;
+  height: 158px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+
+  visibility: hidden;
+  position: absolute;
+
+}
+
+.under-hidden-buy{
+  display: flex;
+  width: 135px;
+  height: 38px;
+  background-color: #63a63e;
+  border-radius: 4px;
+  margin-top:42px;
+}
+
+.under-hidden-buy img{
+  margin-top:10px;
+  margin-right: 25px;
+  margin-left: 11px;
+  opacity: 0.3;
+  color:white;
+}
+
+.under-hidden-buy span{
+  margin-top:9px;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.v-zakladki {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+
+  align-self: center;
+  padding-top:7px;
+  padding-right:31px;
+  padding-left: 30px;
+  padding-bottom: 7px;
+
+  margin-top: 7px;
+
+  border: 3.0px solid #63a63e;
+  border-radius: 4px;
+
+}
+
+.drill-tool:hover .drill-cart-img {                  /* Анимации с появлением кнопок */
+  visibility: hidden;
+
+}
+
+.drill-tool:hover .hidden-buy {
+  visibility: visible;
+}
+
+.drill-tool:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41,51,73,0.5);
+  background-color: #ffffff;
+
+}
+
+.under-hidden-buy:hover {                       /* Анимации наведения и клика для них же */
+  background-color: #5fbb2d;
+}
+
+.under-hidden-buy:hover img {
+  opacity: 1;
+}
+
+.under-hidden-buy:active {
+  background-color: #518534;
+}
+
+.v-zakladki:hover {
+  border-color: #32425c ;
+  color: #32425c ;
+}
+
+.v-zakladki:active {
+  border-color: #32425c ;
+  color: #32425c ;
+  opacity: 0.3;
+}
+
+
+
