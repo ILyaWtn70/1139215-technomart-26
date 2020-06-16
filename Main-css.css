@@ -104,7 +104,7 @@ background-color: #dc91d8;
   background-color: #ffbf47;
 }
 
-.popular-items h2 {
+.popular-items h2 {                         /* Популярные товары и Производители тут же*/
   font-family: Cuprum;
   font-size: 30px;
   line-height: 30px;
@@ -135,6 +135,7 @@ background-color: #dc91d8;
   width: 940px;
   height: 89px;
   background-color: #f9f5f0;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-evenly;
@@ -310,6 +311,183 @@ background-color: #dc91d8;
   color: #32425c ;
   opacity: 0.3;
 }
+                                                             /* Производители иконки */
+.firms {
+  display: flex;
+  width: 940px;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.firms a{
+  width: 218px;
+  height: 143px;
+  background-color: #ffffff;
+  border: 1.0px solid #eaeaea;
+  text-align: center;
+}
+                                                        /* Производители иконки выравнивание */
+.bosch-icon {line-height: 160px;}
+.makita-icon {line-height: 160px;}
+.dewalt-icon{line-height: 160px;}
+.interskol-icon{line-height: 200px;}
+.hitachi-icon{line-height: 160px;}
+.lg-icon{line-height: 200px;}
+.aeg-icon{line-height: 200px;}
+.metabo-icon{line-height: 200px;}
+
+
+.firms a:hover    {                                       /* Производители иконки анимации */
+  box-shadow: 0px 10px 25px 0px rgba(41,51,73,0.5);
+}
+
+.firms a:active {
+  box-shadow: 0px 4px 10px 0px rgba(41,51,73,0.5);
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+                                                               /* Секция с доставкой */
+.services {
+  width:100%;
+  background-color: #f4f8f9;
+  margin-top: 68px;
+}
+
+.services h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services span {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
+  color: #000000;
+}
+
+.text-block-services{
+  width:940px;
+  padding-top: 68px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-options {
+  width:940px;
+  padding-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+
+}
+
+.user-options-buttons{
+  margin-right: 80px;
+}
+
+.user-options-buttons button {
+  width: 240px;
+  height: 62px;
+  border:none;
+}
+
+.drive-button {
+  width: 240px;
+  height: 62px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #293349;
+
+}
+
+.drive-button span {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #32425c;
+  padding-right: 115px;
+}
+
+.guarantee-button {
+  box-shadow: 0px 1px 0px 0px #293349;
+  background-color: #32425c;
+
+}
+
+.guarantee-button span{
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-right: 115px;
+}
+
+.credit-button {
+  box-shadow: 0px 1px 0px 0px #293349;
+  background-color: #32425c;
+
+}
+
+.credit-button span{
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-right: 130px;
+}
+
+.text-box-without-picture{
+  width: 275px;
+  height: 147px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -25px;
+}
+
+.text-box-without-picture h2 {
+  font-family: Cuprum;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.text-box-without-picture span {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
+  color: #000000;
+}
+
+.text-box-with-picture {
+  display: flex;
+}
+
+.text-box-without-picture img {
+  position: relative;
+  margin-right: -120px;
+}
+
+
+
+
+
+
+
+
 
 
 
