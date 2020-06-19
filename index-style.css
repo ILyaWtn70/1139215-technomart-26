@@ -89,12 +89,11 @@ header{
 
 .search-field{
   display: flex;
-  padding-top:12px;
-  padding-bottom:12px;
+  padding-top:9px;
+  padding-bottom:8px;
   padding-right:2px;
 
 }
-
 .search-field input  {
   background-color: #293449;
   border:none;
@@ -108,6 +107,28 @@ header{
 }
 
 
+input[id=a]:focus {                            /* Анимации поля поика */
+  background-color:#fff;
+  color:black;
+  outline:none;
+}
+
+.search-field:focus-within{
+  background-color:#fff;
+}
+
+.search-field:focus-within img{
+  opacity: 1;
+  filter:  hue-rotate(250deg) saturate(10);
+}
+
+.search-field:focus img {
+  opacity: 1;
+
+}
+
+
+
 
 .flag-button{
   font-family: Cuprum;
@@ -115,7 +136,7 @@ header{
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 11px;
   padding-left:8px;
   padding-right: 28px;
@@ -130,7 +151,7 @@ header{
 }
 
 .buy-items{
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .bag-field{
@@ -145,6 +166,7 @@ header{
   padding-right: 28px;
   display: flex;
   margin-bottom: 5px;
+  margin-top: 4px;
 
 }
 
@@ -166,8 +188,8 @@ header{
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 3px;
+  padding-top: 11px;
+  padding-bottom: 4px;
   padding-left:13px;
   padding-right: 27px;
   display: flex;
@@ -176,7 +198,7 @@ header{
 
 .custom{
   margin-left:4px;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 }
 
 
@@ -189,10 +211,6 @@ header{
   background-color:red;
 }
 
-.search-field:active{
-  background-color:white;
-  color:black;
-}
 
 .top2{
   display:flex;

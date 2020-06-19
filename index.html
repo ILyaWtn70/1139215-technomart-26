@@ -25,12 +25,11 @@
       </label>
     <div class="search">
      <form id="search">
-       <input type="text"
-              name="search"
+       <input type="search"
               placeholder="Поиск"
-              id="a"
-              class="search-style";
+              id="a";
               >
+      </label>
      </form>
     </div>
     </div>
@@ -229,10 +228,10 @@
       <a href="">все производители</a>
     </div>
     <div class="firms">
-      <a href="" class="bosch-icon"><img src="img/bosch.png" width="126" height="37" ></a>
-      <a href="" class="makita-icon"><img src="img/makita.png" height="40" width="123" ></a>
+    <a href="" class="bosch-icon"><img src="img/bosch.png" width="126" height="37" ></a>
+    <a href="" class="makita-icon"><img src="img/makita.png" height="40" width="123" ></a>
       <a href="" class="dewalt-icon"><img src="img/dewalt_3799.png" width="146" height="44" ></a>
-      <a href="" class="interskol-icon"><img src="img/interskol_3800.png" height="88" width="200" ></a>
+    <a href="" class="interskol-icon"><img src="img/interskol_3800.png" height="88" width="200" ></a>
         </div>
       <div class="firms">
       <a href="" class="hitachi-icon"><img src="img/hitachi_3805.png" width="169" height="31" > </a>
@@ -251,24 +250,65 @@
     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
     </span>
     </div>
-    <div class="user-options">
-    <div class="user-options-buttons">
-      <button type="button" class="drive-button"><span> Доставка</span></button>
-      <button type="button" class="guarantee-button"><span>Гарантия</span></button>
-      <button type="button" class="credit-button"><span>Кредит</span></button>
-    </div>
-      <div class="text-box-with-picture">
-      <div class="text-box-without-picture">
-    <h2>ДОСТАВКА</h2>
-     <span> Мы с удовольствием доставим ваш товар прямо<br>
+    <div class="user-services">
+      <input type="radio" name="service-choice" id="delivery" checked>
+      <input type="radio"  name="service-choice" id="guarantee">
+      <input type="radio"  name="service-choice" id="credit" >
+        <div class="service-toggle">
+          <label for="delivery">Доставка</label>
+          <label for="guarantee">Гарантия</label>
+          <label for="credit">Кредит</label>
+        </div>
+      <div class="text-box-without-picture delivery">
+        <h2>ДОСТАВКА</h2>
+        <span> Мы с удовольствием доставим ваш товар прямо<br>
     к вашему подъезду совершенно бесплатно!<br>
     Ведь мы неплохо заработаем,<br>
     поднимая его на ваш этаж!</span>
       </div>
-      <img src="img/dotavka.png" width="468" height="261">
-    </div>
-    </div>
+
+      <div class="text-box-without-picture credit">
+        <h2>КРЕДИТ</h2>
+        <span>
+      Залезть в долговую яму стало проще!<br>
+      Кредитные консультанты придут вам на помощь..<br>
+      <br> <br>
+      <a href="" class="">ОТПРАВИТЬ ЗАЯВКУ</a>
+    </span>
+      </div>
+
+        <div class="text-box-without-picture guarantee">
+          <h2>ГАРАНТИЯ</h2>
+          <span>Если купленный у нас товар поломается или заскрипит,<br>
+      а также в случае пожара, спровоцированного его возгоранием,<br>
+      вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+      сгоревший товар на новый.<br>
+      Дом уж восстановите как-нибудь сами.
+    </span>
+        </div>
+      </div>
   </section>
+
+  <!--<div class="text-box-without-picture credit">
+    <h2>КРЕДИТ</h2>
+    <span>
+      Залезть в долговую яму стало проще!<br>
+      Кредитные консультанты придут вам на помощь..<br>
+      <br> <br>
+      <a href="" class="">ОТПРАВИТЬ ЗАЯВКУ</a>
+    </span>-->
+
+    <!--<div class="text-box-without-picture guarantee">
+      <h2>ГАРАНТИЯ</h2>
+      <span>Если купленный у нас товар поломается или заскрипит,<br>
+      а также в случае пожара, спровоцированного его возгоранием,<br>
+      вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+      сгоревший товар на новый.<br>
+      Дом уж восстановите как-нибудь сами.
+    </span>
+    </div>-->
+
+  </div>
 
   <section>
     <h2>Компания "Техномарт"</h2>
