@@ -289,65 +289,55 @@
       </div>
   </section>
 
-  <!--<div class="text-box-without-picture credit">
-    <h2>КРЕДИТ</h2>
-    <span>
-      Залезть в долговую яму стало проще!<br>
-      Кредитные консультанты придут вам на помощь..<br>
-      <br> <br>
-      <a href="" class="">ОТПРАВИТЬ ЗАЯВКУ</a>
-    </span>-->
-
-    <!--<div class="text-box-without-picture guarantee">
-      <h2>ГАРАНТИЯ</h2>
-      <span>Если купленный у нас товар поломается или заскрипит,<br>
-      а также в случае пожара, спровоцированного его возгоранием,<br>
-      вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-      сгоревший товар на новый.<br>
-      Дом уж восстановите как-нибудь сами.
-    </span>
-    </div>-->
-
   </div>
 
-  <section>
-    <h2>Компания "Техномарт"</h2>
+  <div class="company-contacts" >
+    <section class="company-description">
+      <h2>Компания "Техномарт"</h2>
 
+    <p> Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и<br>
+      строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br><br>
 
-    Настоящий мужской шоппинг начинается здесь!
-    Огромный выбор товаров для ремонта и строительства не оставит
-    равнодушными любителей сэкономить на гастарбайтерах.
-
-    Мы можем доставить ваш товар в самые отдаленные точки России!
-    Техномарт работает со многими транспортными компаниями:
-    <ul>
-      <li>Деловые линии</li>
-      <li>Автотрейдинг</li>
+    Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+    Техномарт работает со многими транспортными компаниями: </p> <br>
+      <ul>
+      <li>Деловые линии</li><br>
+      <li>Автотрейдинг</li><br>
       <li>ЖелДорЭкспедиция</li>
-    </ul>
+    </ul><br><br>
     <a href="">Подробнее о компании</a>
   </section>
-  <section>
-    <h2>КОНТАКТЫ</h2>
 
-    Вы можете забрать товар сами,
-    заехав в наш офис:
-    <button type="button"><img src="img/Map.png" height="158" width="300"></button>
-    <figure class="visually-hidden">
-      <button type="button" class="close-button"><img src="img/kretik.png" width="21" height="21"></button>
-      <img src="img/pryamougolnik_1_4198.png" width="968" height="474">
-    </figure>
-    <button type="button">Заблудились?Напишите нам!</button>
+    <form id="write-us" class="write-us">
+      <a href="" class="close-button">
+        <img src="img/kretik.png" height="21" width="21">
+      </a>
+      <div class="write-us-central">
+        <div class="name-mail">
+          <label for="your-name"> Ваше имя: </label>
+          <label for="your-email" class="item2"> Ваш e-mail:</label><br>
+        </div>
+        <input type="text" id="your-name" placeholder="Имя Фамилия">
+        <input type="text" id="your-email" placeholder="email@example.com"><br>
+        <label for="letter-text">Текст письма:</label><br>
+        <textarea rows="5" placeholder="В свободной форме" id="letter-text"></textarea><br>
+        <button type="submit" class="send">ОТПРАВИТЬ</button>
+      </div>
+    </form>
+
+  <section class="contact-map">
+    <h2>КОНТАКТЫ</h2>
+    <p>Вы можете забрать товар сами,<br>
+      заехав в наш офис:</p><br>
+    <a href="#map-popup" class="map"><img src="img/appp.png" width="300" height="158"> </a>
+    <br><br><br><br><br>
+    <a href="#write-us" class="write-us-button">Заблудились? НапиШИТЕ НАМ!</a>
   </section>
-  <form name="write_us" class="visually-hidden">
-     <button type="button" class="close-button"><img src="img/kretik.png" height="21" width="21"></button>
-     Ваше имя:                        Ваш e-mail:<br>
-    <input type="text" name="imya" placeholder="Имя Фамилия">
-    <input type="text" name="email" placeholder="email@example.com"><br>
-    Текст письма:<br>
-    <textarea rows="5"></textarea><br>
-    <button type="submit">ОТПРАВИТЬ</button>
-  </form>
+  </div>
+   <div id="map-popup">
+      <button type="button" class="close-button"><img src="img/kretik.png" width="21" height="21"></button>
+   </div>
+
 
 </main>
 <footer>
