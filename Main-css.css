@@ -35,12 +35,170 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.main-links {
-  display:flex;
-  flex-direction: column;
+/* Вершина мейна*/
+.main-top{
+  height: 410px;
+  margin-top: 60px;
 }
 
+.main-links1 {
+  display:flex;
+  flex-direction: row;
+  width:940px;
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: space-between;
+}
+
+.main-links2 {
+  display: flex;
+  width:940px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+                  /* Слайдер*/
+.slides {
+  width: 620px;
+  height: 266px;
+  background-image: url(img/slider_1.png);
+}
+
+.main-links2 input {
+  display: none;
+}
+
+.perfo-for-men {
+  position: absolute;
+  visibility: hidden;
+}
+
+ .slides a {
+   font-size: 14px;
+   line-height: 18px;
+   font-weight: 400;
+   text-transform: uppercase;
+   color: #ffffff;
+   padding-top:13px;
+   padding-right:55px;
+   padding-bottom: 13px;
+   padding-left: 55px;
+   background-color: #ee3643;
+   border-radius: 5px;
+   margin-bottom: 20px;
+ }
+
+.under-main-links2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide-buttons {
+  display: flex;
+  align-items: baseline;
+  margin-top: 106px;
+  margin-left: 25px;
+}
+
+.radio-slider{
+  display: flex;
+  margin-left: 66px;
+}
+
+.radio-slider label[for="slide1"] {
+  margin-right: 10px;
+}
+
+
+
+
+.slides h2{
+font-family: Cuprum;
+font-size: 36px;
+line-height: 36px;
+font-weight: 700;
+text-transform: uppercase;
+color: #ffffff;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  margin-top: 26px;
+}
+
+.slides span{
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 25px;
+}
+                                              /* Анимации слайдера */
+#slide1:checked~.slides {
+  background-image: url("img/slider_1.png");
+}
+
+#slide2:checked~.slides {
+  background-image: url("img/slider_2.png");
+}
+
+#slide2:checked~.perfo-for-men {
+  visibility: visible;
+  position: relative;
+}
+
+#slide2:checked~.drills-for-men {
+  visibility: hidden;
+  position: absolute;
+}
+
+.radio-slider label {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+.radio-slider label span {
+  display: none;
+}
+
+#slide1:checked~ .drills-for-men .slide-buttons .radio-slider label[for="slide1"]::before,
+#slide2:checked~ .perfo-for-men .slide-buttons .radio-slider label[for="slide2"]::before{
+   content: "";
+   position: absolute;
+   background: red;
+   border-radius: 50%;
+   width: 6px;
+   height: 6px;
+   margin-top: 2px;
+   margin-left: 2px;
+}
+                                 /* Кнопки-стрелочки */
+.arrow-button-slider {
+  position: absolute;
+  display: flex;
+}
+
+.arrow1{
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.arrow2{
+  padding-left: 525px;
+  padding-top: 25px;
+}
+
+
+
+
+                             /* Картинки с кнопками*/
 .materials h2{
   font-family: Cuprum;
   font-size: 24px;
@@ -84,8 +242,7 @@ under-materials {
 
 .banka-pic {
     background-color: #ffbf47;
-    margin-left: 40px;
-    margin-top: 40px;
+
   }
 
 .drill-pic {
@@ -504,6 +661,7 @@ background-color: #dc91d8;
   position: relative;
 }
 
+
                             /* Компания и контакт */
 .company-contacts{
   width: 940px;
@@ -596,11 +754,12 @@ border-radius: 5px;
 
            /* Окно напишите нам */
 #write-us {
+  position: fixed;
   display: none;
   width:620px;
   height:423px;
-  margin-left: auto;
-  margin-right: auto;
+  bottom: 100px;
+  left: 200px;
   background: white;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 10px 25px 0px rgba(41,51,73,0.5);
@@ -634,7 +793,7 @@ border-radius: 5px;
   margin-bottom: 20px;
 }
 
-.close-button {
+.close-button-write {
   float:right;
   border:none;
   background: white;
@@ -660,6 +819,7 @@ border-radius: 5px;
   text-align: left;
   margin-top: 12px;
   margin-bottom: 20px;
+  background-image: none;
 }
 
 #your-email{
@@ -687,32 +847,41 @@ text-align: center ;
 
 #write-us:target {
   display: block;
-  position: absolute;
+  transform: translateX(30%);
+  z-index: 200;
 }
 
-.close-button:active~#write-us{
+.close-button-write:active~#write-us{
   display:none;
 }
 
 /* Окно с картой */
 
 #map-popup {
+  position: fixed;
   width:968px;
   height:474px;
-  margin-left: auto;
-  margin-right: auto;
+  bottom: 100px;
+  left: 190px;
   background-image: url(img/pryamougolnik_1_4198.png);
   display: none;
+
 }
 
-#map-popup .close-button {
+.close-button-map {
+  float: right;
   background: none;
+  border: none;
   margin-top:20px;
   margin-right:15px;
 }
 
 #map-popup:target {
   display: block;
+}
+
+.close-button-map:focus~#map-popup{
+  display: none;
 }
 
 
