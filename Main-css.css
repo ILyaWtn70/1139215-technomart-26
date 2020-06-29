@@ -206,10 +206,9 @@ color: #ffffff;
   font-weight: 700;
   color: #ffffff;
   margin-left: 23px;
-  margin-top:25px;
 }
 
-under-materials {
+.under-materials {
   display: flex;
   flex-direction: column;
 }
@@ -240,6 +239,17 @@ under-materials {
   margin-top:28px;
 }
 
+.under-materials:hover a {
+  opacity: 0.2;
+}
+
+.under-materials:active a {
+  opacity: 0.3;
+}
+
+
+
+
 .banka-pic {
     background-color: #ffbf47;
 
@@ -259,6 +269,14 @@ background-color: #dc91d8;
 
 .truck-pic{
   background-color: #ffbf47;
+}
+                               /* Анимации для всех красных кнопок*/
+.red-button:hover {
+  background-color: #ca2c37;
+}
+
+.red-button:active {
+background-color: #ba2732;
 }
 
 .popular-items h2 {                         /* Популярные товары и Производители тут же*/
@@ -364,11 +382,26 @@ background-color: #dc91d8;
   background-color:#ee3643;
   text-align: center;
   align-self: center;
-  padding-top:13px;
-  padding-right: 40px;
-  padding-bottom: 13px;
-  padding-left:40px;
+  padding-top:10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left:50px;
+  border-radius: 4px;
 }
+
+.red-price::after {
+  content: "";
+  position: absolute;
+  background-color: #ee3643;;
+  width: 27px;
+  height: 27px;
+  -webkit-transform: rotate(135deg);
+  margin-left: 14px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+
+}
+
 
 .hidden-buy{                         /* Окно которое появляется при наведении на карточку товара */
   display: flex;

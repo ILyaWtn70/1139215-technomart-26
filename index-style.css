@@ -20,11 +20,6 @@ body {
   background-color: #293449;;
 }
 
-.content{
-  width:940px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 a {
   text-decoration: none;
@@ -47,7 +42,7 @@ header{
   height: 320px;
 
 }
-
+                                /* Верхушка и анимации */
 .flex-top1{
   width: 940px;
   height: 42px;
@@ -64,6 +59,14 @@ header{
   background-color: #ee3643;
   text-align:center;
   box-shadow: 0 5px 0 0 #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
 }
 
 .img-search{
@@ -83,8 +86,6 @@ header{
   margin-left:7px;
   padding-right:57px;
   display: flex;
-
-
 }
 
 .search-field{
@@ -92,6 +93,7 @@ header{
   padding-top:9px;
   padding-bottom:8px;
   padding-right:2px;
+
 
 }
 .search-field input  {
@@ -124,11 +126,7 @@ input[id=a]:focus {                            /* Анимации поля по
 
 .search-field:focus img {
   opacity: 1;
-
 }
-
-
-
 
 .flag-button{
   font-family: Cuprum;
@@ -149,6 +147,8 @@ input[id=a]:focus {                            /* Анимации поля по
   margin-right:9px;
   margin-left:8px;
 }
+
+
 
 .buy-items{
   margin-bottom: 1px;
@@ -193,7 +193,7 @@ input[id=a]:focus {                            /* Анимации поля по
   padding-left:13px;
   padding-right: 27px;
   display: flex;
-  background-color: #5fbb2d;
+  background-color: #63a63e;
 }
 
 .custom{
@@ -201,16 +201,25 @@ input[id=a]:focus {                            /* Анимации поля по
   margin-bottom: 9px;
 }
 
-
-
-.bag-field:hover {
-  background-color:red;
+.flag-button:hover .flag-img,
+.bag-field:hover .bag-img {
+  opacity: 1;
 }
 
-.flag-button:hover {
-  background-color:red;
+.flag-button:active .flag-img,
+.bag-field:active .bag-img,
+.flag-button:active span,
+.bag-field:active span{
+  opacity: 0.5;
 }
 
+.made-custom:hover {
+  background-color: #5fbb2d;
+}
+
+.made-custom:active {
+  background-color: #518534;
+}
 
 .top2{
   display:flex;
@@ -307,6 +316,7 @@ input[id=a]:focus {                            /* Анимации поля по
 }
 
 
+
 .registration{
   width: 150px;
   height: 45px;
@@ -325,6 +335,25 @@ input[id=a]:focus {                            /* Анимации поля по
   font-size: 21px;
   line-height: 21px;
   font-weight: 400;
+  color: #000000;
+}
+                                      /* Анимации поля входа и регитрации */
+.enter-field:hover .img-enter {
+  filter: brightness(0);
+}
+
+.enter-field:hover .enter,
+.registration:hover span{
+  color: #ee3643;
+}
+
+.enter-field:active .img-enter {
+  filter: brightness(1);
+}
+
+.enter-field:active .enter,
+.registration:active span{
+  opacity: 0.3;
   color: #000000;
 }
 
@@ -362,19 +391,12 @@ input[id=a]:focus {                            /* Анимации поля по
   padding-bottom: 22px;
 }
 
-.link1:hover{
-  background-color: #1d2739;
-}
 
 .link2 {
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 18px;
   padding-bottom: 22px;
-}
-
-.link2:hover{
-  background-color: #1d2739;
 }
 
 .link3 {
@@ -384,19 +406,12 @@ input[id=a]:focus {                            /* Анимации поля по
   padding-bottom: 22px;
 }
 
-.link3:hover{
-  background-color: #1d2739;
-}
 
 .link4 {
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 18px;
   padding-bottom: 22px;
-}
-
-.link4:hover{
-  background-color: #1d2739;
 }
 
 .link5 {
@@ -406,9 +421,6 @@ input[id=a]:focus {                            /* Анимации поля по
   padding-bottom: 22px;
 }
 
-.link5:hover{
-  background-color: #1d2739;
-}
 
 .link6 {
   padding-right: 32px;
@@ -417,9 +429,6 @@ input[id=a]:focus {                            /* Анимации поля по
   padding-bottom: 22px;
 }
 
-.link6:hover{
-  background-color: #1d2739;
-}
 
 .link7 {
   padding-right: 37px;
@@ -428,7 +437,25 @@ input[id=a]:focus {                            /* Анимации поля по
   padding-bottom: 22px;
 }
 
+.link1:hover,
+.link2:hover,
+.link3:hover,
+.link4:hover,
+.link5:hover,
+.link6:hover,
 .link7:hover{
   background-color: #1d2739;
 }
+
+.link1:active span,
+.link2:active span,
+.link3:active span,
+.link4:active span,
+.link5:active span,
+.link6:active span,
+.link7:active span {
+  opacity: 0.5;
+}
+
+
 

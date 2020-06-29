@@ -1,0 +1,492 @@
+
+
+.login-in{
+  display:flex;
+  width: 299px;
+  height: 45px;
+  background: white;
+  margin-top: 46px;
+  margin-left: 57px;
+  justify-content: space-evenly;
+  line-height: 15px;
+  flex-wrap: wrap;
+}
+
+.user-name{
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 11px;
+}
+
+.login-in img {
+  margin-top: 12px;
+}
+
+.login-service {
+  display: flex;
+  margin-top: 20px;
+}
+
+.login-service .first{
+  margin-right: 30px;
+}
+
+.login-service .first::after{
+  content: "";
+  position: absolute;
+  color: #32425c;
+  background: #32425c;
+  width: 4px;
+  height: 4px;
+  border-radius: 50% ;
+  margin-top: 8px;
+  margin-left: 14px;
+
+}
+
+
+.login-service a {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #32425c;
+
+}
+
+
+main{
+  width: 100%;
+
+}
+
+/* Мейн каталога*/
+
+.catalog-hierarchy {
+  display: flex;
+  margin-top: 25px;
+  width: 360px;
+  justify-content:space-between;
+}
+
+
+.catalog-hierarchy span {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.home-pic {
+  margin-right: 5px;
+}
+
+.perfo-title {
+  background: #f2f6f8;
+  height: 89px;
+}
+
+.perfo-title h2{
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+  padding-top: 28px;
+  padding-left: 28px;
+  margin-bottom: 20px;
+}
+
+.catalog-menu {
+  display: flex;
+  margin-top: 20px;
+}
+
+.filter {
+  width: 220px;
+  height: 38px;
+  background-color: #f7f3ec;
+  border-radius: 4px;
+
+  line-height: 35px;
+}
+
+.filter span {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 18px;
+}
+
+.catalog-main-right {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-left: 20px;
+}
+
+.catalog-main-left {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.catalog-perfo {
+  display: flex;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  justify-content: space-between;
+}
+
+
+
+.sorted {
+  display: flex;
+  width: 700px;
+  height: 38px;
+  background-color: #f7f3ec;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.sorted span {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 18px;
+  margin-top: 8px;
+  margin-right: 50px;
+}
+
+.sorted button {
+  border: none;
+  background: #f7f3ec;
+  margin-bottom: 5px;
+}
+
+.sorted button span{
+  opacity: 0.3;
+font-family: PTSans;
+font-size: 13px;
+line-height: 1.2;
+font-weight: 400;
+color: #000000;
+  text-transform: uppercase ;
+  border-bottom: 1px dashed red;
+}
+
+.sorted button span:hover {
+  opacity: 1;
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+.sorted button span:active {
+  opacity: 1;
+  text-decoration: none;
+  border-bottom: none;
+  color: red;
+}
+
+.catalog-perfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+h3 {
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.price-slider {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 40px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.price-range span {
+  background-color: #f7f3ec;
+  width: 95px;
+  height: 38px;
+  color: black;
+  border-radius: 4px;
+
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.line {
+  margin-top: 50px;
+
+  width: 220px;
+  height: 1px;
+  background-color: #f7f3ec;
+}
+
+.pseudo-radio-firm {
+  display: flex;
+}
+
+.pseudo-radio-firm span{
+  margin-left: 10px;
+}
+
+.firms {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.firms span {
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.firms input {
+  display: none;
+}
+
+.checkbox-on {
+  visibility: hidden;
+  position: absolute;
+}
+
+.pseudo-radio-firm label {
+  opacity: 0.7;
+}
+
+.pseudo-radio-firm label:hover{
+  opacity: 1;
+}
+
+
+#BOSCH:checked~.pseudo-radio-firm label[for="BOSCH"] .checkbox-on,
+#ИНТЕРСКОЛ:checked~.pseudo-radio-firm label[for="ИНТЕРСКОЛ"] .checkbox-on,
+#MAKITA:checked~.pseudo-radio-firm label[for="MAKITA"] .checkbox-on,
+#DEWALT:checked~.pseudo-radio-firm label[for="DEWALT"] .checkbox-on,
+#HITACHI:checked~.pseudo-radio-firm label[for="HITACHI"] .checkbox-on{
+  visibility: visible;
+  position: relative;
+}
+
+#BOSCH:checked~.pseudo-radio-firm label[for="BOSCH"] .checkbox-off,
+#ИНТЕРСКОЛ:checked~.pseudo-radio-firm label[for="ИНТЕРСКОЛ"] .checkbox-off,
+#MAKITA:checked~.pseudo-radio-firm label[for="MAKITA"] .checkbox-off,
+#DEWALT:checked~.pseudo-radio-firm label[for="DEWALT"] .checkbox-off,
+#HITACHI:checked~.pseudo-radio-firm label[for="HITACHI"] .checkbox-off{
+  visibility: hidden;
+  position: absolute;
+}
+
+.energy {
+  display: flex;
+  flex-direction: column;
+}
+
+.energy input {
+  display: none;
+}
+
+.pseudo-radio-energy span {
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pseudo-radio-energy img {
+  margin-bottom: -6px;
+}
+
+.radio-on {
+  visibility: hidden ;
+  position: absolute;
+}
+
+#АККУМУЛЯТОРНЫЕ:checked~.pseudo-radio-energy label[for="АККУМУЛЯТОРНЫЕ"] .radio-on,
+#СЕТЕВЫЕ:checked~.pseudo-radio-energy label[for="СЕТЕВЫЕ"] .radio-on {
+  visibility: visible;
+  position: relative;
+}
+
+#АККУМУЛЯТОРНЫЕ:checked~.pseudo-radio-energy label[for="АККУМУЛЯТОРНЫЕ"] .radio-off,
+#СЕТЕВЫЕ:checked~.pseudo-radio-energy label[for="СЕТЕВЫЕ"] .radio-off {
+  visibility: hidden;
+  position: absolute;
+}
+
+.pseudo-radio-energy label{
+  opacity: 0.7;
+}
+
+.pseudo-radio-energy label:hover{
+  opacity: 1;
+}
+
+
+
+.show-button {
+  margin-top: 75px;
+  width: 140px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1.0px solid #e5e5e5;
+
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.page-buttons a{
+  width: 38px;
+  height: 38px;
+  line-height: 37px;
+
+}
+
+.page-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 285px;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 50px;
+}
+
+.page-buttons input {
+  display: none;
+}
+
+.page-buttons .next-button {
+  width: 140px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1.0px solid #e5e5e5;
+  border-radius: 4px;
+
+  text-align: center;
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #000000;
+
+}
+
+.page-buttons label{
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1.0px solid #e5e5e5;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.page-buttons label a {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 37px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.page-buttons label:hover,
+.page-buttons .next-button:hover{
+  border: 1.0px solid #bdc6ca;
+}
+
+.page-buttons label:active,
+.page-buttons .next-button:active {
+  border: 1.0px solid #ee3643;
+}
+
+#page1:checked~ label[for="page1"],
+#page2:checked~ label[for="page2"],
+#page3:checked~ label[for="page3"] {
+  background-color: #ee3643;
+  border: 1.0px solid #ee3643;
+}
+
+#page1:checked~ label[for="page1"] a,
+#page2:checked~ label[for="page2"] a,
+#page3:checked~ label[for="page3"] a {
+  color: white;
+}
+
+.catalog-bottom {
+  width: 100%;
+  height: 261px;
+  background: #f2f6f8;
+}
+
+.catalog-bottom h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 68px;
+}
+
+.catalog-bottom p {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: none;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
