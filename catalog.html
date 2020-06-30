@@ -236,7 +236,7 @@
              <img src="img/perforator_2.png" width="218" height="170" class="drill-cart-img">
 
              <div class="hidden-buy">
-               <a href="" class="under-hidden-buy">
+               <a href="#open-popup" class="under-hidden-buy">
                  <img src="img/buy_icon.png" height="15" width="15" >
                  <span>КУПИТЬ</span>
                </a>
@@ -252,7 +252,7 @@
                <img src="img/perforator_3.png" height="170" width="218" class="drill-cart-img">
 
                <div class="hidden-buy">
-                 <a href="" class="under-hidden-buy">
+                 <a href="#open-popup" class="under-hidden-buy">
                    <img src="img/buy_icon.png" height="15" width="15">
                    <span>КУПИТЬ</span>
                  </a>
@@ -268,7 +268,7 @@
                <img src="img/perforator_4.png" width="218" height="170" class="drill-cart-img">
 
                <div class="hidden-buy">
-                 <a href="" class="under-hidden-buy">
+                 <a href="#open-popup" class="under-hidden-buy">
                    <img src="img/buy_icon.png" height="15" width="15">
                    <span>КУПИТЬ</span>
                  </a>
@@ -290,7 +290,7 @@
                <img src="img/perforator_2.png" width="218" height="170" class="drill-cart-img">
 
                <div class="hidden-buy">
-                 <a href="" class="under-hidden-buy">
+                 <a href="#open-popup" class="under-hidden-buy">
                    <img src="img/buy_icon.png" height="15" width="15" >
                    <span>КУПИТЬ</span>
                  </a>
@@ -306,7 +306,7 @@
                <img src="img/perforator_3.png" height="170" width="218" class="drill-cart-img">
 
                <div class="hidden-buy">
-                 <a href="" class="under-hidden-buy">
+                 <a href="#open-popup" class="under-hidden-buy">
                    <img src="img/buy_icon.png" height="15" width="15">
                    <span>КУПИТЬ</span>
                  </a>
@@ -322,7 +322,7 @@
                <img src="img/perforator_4.png" width="218" height="170" class="drill-cart-img">
 
                <div class="hidden-buy">
-                 <a href="" class="under-hidden-buy">
+                 <a href="#open-popup" class="under-hidden-buy">
                    <img src="img/buy_icon.png" height="15" width="15">
                    <span>КУПИТЬ</span>
                  </a>
@@ -340,7 +340,7 @@
                  <img src="img/perforator_2.png" width="218" height="170" class="drill-cart-img">
 
                  <div class="hidden-buy">
-                   <a href="" class="under-hidden-buy">
+                   <a href="#open-popup" class="under-hidden-buy">
                      <img src="img/buy_icon.png" height="15" width="15" >
                      <span>КУПИТЬ</span>
                    </a>
@@ -356,7 +356,7 @@
                  <img src="img/perforator_3.png" height="170" width="218" class="drill-cart-img">
 
                  <div class="hidden-buy">
-                   <a href="" class="under-hidden-buy">
+                   <a href="#open-popup" class="under-hidden-buy">
                      <img src="img/buy_icon.png" height="15" width="15">
                      <span>КУПИТЬ</span>
                    </a>
@@ -372,7 +372,7 @@
                  <img src="img/perforator_4.png" width="218" height="170" class="drill-cart-img">
 
                  <div class="hidden-buy">
-                   <a href="" class="under-hidden-buy">
+                   <a href="#open-popup" class="under-hidden-buy">
                      <img src="img/buy_icon.png" height="15" width="15">
                      <span>КУПИТЬ</span>
                    </a>
@@ -486,13 +486,27 @@
   </section>
 </footer>
 
-<form class="visually-hidden">
-  <button type="button"><img src="img/kretik.png" width="21" height="21">
-  </button>
-  <img src="img/form_katalog.png" height="66" width="66"> Товар добавлен в корзину!<br>
-  <button type="button">ОФОРМИТЬ ЗАКАЗ</button>
-  <button type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-</form>
+<div class="in-bag popup" id="open-popup">
+
+  <button class="close-popup" id="close">Закрыть</button>
+
+  <div class="in-bag-top">
+  <img src="img/form_katalog.png" height="66" width="66">
+  <span>Товар добавлен в корзину!</span>
+  </div>
+
+  <label for="close">
+    <a href="">
+    <img src="img/kretik.png" width="21" height="21">
+    </a>
+  </label>
+
+  <div class="in-bag-bottom">
+  <a href="">ОФОРМИТЬ ЗАКАЗ</a>
+  <a href="">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+  </div>
+
+</div>
 
 
 </body>
